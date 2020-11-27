@@ -10,7 +10,7 @@ public class App {
     JLabel label_background=new JLabel();
     JLabel label_score=new JLabel();
     JLabel label_end=new JLabel();
-    int score,score1,score2,score3;
+    int score,score1,score2,score3,score4;
 
     //构造方法
     public App() {
@@ -20,23 +20,29 @@ public class App {
                 super.mouseClicked(e);
                 if (e.getX()>673&&e.getX()<717 && e.getY()>300&&e.getY()<329) {
                     score1=1;
-                    score=score1+score2+score3;
+                    score=score1+score2+score3+score4;
                     label_score.setText("Your score:"+String.valueOf(score));
 
                 }
                 if (e.getX()>595&&e.getX()<616 && e.getY()>545&&e.getY()<555) {
                     score2=1;
-                    score=score1+score2+score3;
+                    score=score1+score2+score3+score4;
                     label_score.setText("Your score:"+String.valueOf(score));
 
                 }
                 if (e.getX()>850&&e.getX()<904 && e.getY()>215&&e.getY()<235) {
                     score3=1;
-                    score=score1+score2+score3;
+                    score=score1+score2+score3+score4;
+                    label_score.setText("Your score:"+String.valueOf(score));
+
+                }if (e.getX()>766&&e.getX()<819 && e.getY()>432&&e.getY()<455) {
+                    score4=1;
+                    score=score1+score2+score3+score4;
                     label_score.setText("Your score:"+String.valueOf(score));
 
                 }
-                if (score == 3) {
+
+                if (score == 4) {
                     label_end.setText("Game Over");
                 }
             }
