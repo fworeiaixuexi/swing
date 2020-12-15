@@ -11,6 +11,7 @@ public class App2 {
         }
         public static void main(String[] args) {
         	while (true) {
+        		System.out.println("请输入数值：");
         		Scanner scanner=new Scanner(System.in);
             	int n=scanner.nextInt();
             	if (0<n && n<=40) {
